@@ -1,0 +1,14 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h3>Executed query</h3>
+  <pre> <%= @query %> </pre>
+  <hr>
+  <h3>結果</h3>
+  <% @user.each do |u| %>
+     <p><%= u["name"] %>:  <%= u["email"] %></p>
+  <% end %>
+</body>
+</html>
